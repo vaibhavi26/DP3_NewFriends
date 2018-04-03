@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: 248a4ff962a133b4d9e395bdfd93a9a8
+timeCreated: 1522349617
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Box223
+    100002: Box224
+    100004: Box225
+    100006: Box226
+    100008: Box227
+    100010: Box228
+    100012: Box229
+    100014: Box230
+    100016: Box231
+    100018: Box232
+    100020: Box233
+    100022: Box235
+    100024: Box236
+    100026: Box237
+    100028: Box238
+    100030: Box239
+    100032: Box241
+    100034: Box242
+    100036: Box244
+    100038: Box245
+    100040: Box246
+    100042: Box248
+    100044: Box249
+    100046: Box250
+    100048: fence_e002
+    100050: fence_e003
+    100052: fence_e004
+    100054: fence_e005
+    100056: fence_s001
+    100058: fence_s002
+    100060: //RootNode
+    400000: Box223
+    400002: Box224
+    400004: Box225
+    400006: Box226
+    400008: Box227
+    400010: Box228
+    400012: Box229
+    400014: Box230
+    400016: Box231
+    400018: Box232
+    400020: Box233
+    400022: Box235
+    400024: Box236
+    400026: Box237
+    400028: Box238
+    400030: Box239
+    400032: Box241
+    400034: Box242
+    400036: Box244
+    400038: Box245
+    400040: Box246
+    400042: Box248
+    400044: Box249
+    400046: Box250
+    400048: fence_e002
+    400050: fence_e003
+    400052: fence_e004
+    400054: fence_e005
+    400056: fence_s001
+    400058: fence_s002
+    400060: //RootNode
+    2300000: Box223
+    2300002: Box224
+    2300004: Box225
+    2300006: Box226
+    2300008: Box227
+    2300010: Box228
+    2300012: Box229
+    2300014: Box230
+    2300016: Box231
+    2300018: Box232
+    2300020: Box233
+    2300022: Box235
+    2300024: Box236
+    2300026: Box237
+    2300028: Box238
+    2300030: Box239
+    2300032: Box241
+    2300034: Box242
+    2300036: Box244
+    2300038: Box245
+    2300040: Box246
+    2300042: Box248
+    2300044: Box249
+    2300046: Box250
+    2300048: fence_e002
+    2300050: fence_e003
+    2300052: fence_e004
+    2300054: fence_e005
+    2300056: fence_s001
+    2300058: fence_s002
+    3300000: Box223
+    3300002: Box224
+    3300004: Box225
+    3300006: Box226
+    3300008: Box227
+    3300010: Box228
+    3300012: Box229
+    3300014: Box230
+    3300016: Box231
+    3300018: Box232
+    3300020: Box233
+    3300022: Box235
+    3300024: Box236
+    3300026: Box237
+    3300028: Box238
+    3300030: Box239
+    3300032: Box241
+    3300034: Box242
+    3300036: Box244
+    3300038: Box245
+    3300040: Box246
+    3300042: Box248
+    3300044: Box249
+    3300046: Box250
+    3300048: fence_e002
+    3300050: fence_e003
+    3300052: fence_e004
+    3300054: fence_e005
+    3300056: fence_s001
+    3300058: fence_s002
+    4300000: Box223
+    4300002: Box224
+    4300004: Box225
+    4300006: Box226
+    4300008: fence_e002
+    4300010: Box227
+    4300012: fence_e003
+    4300014: Box228
+    4300016: Box229
+    4300018: Box230
+    4300020: fence_s001
+    4300022: Box231
+    4300024: Box232
+    4300026: Box233
+    4300028: Box235
+    4300030: Box236
+    4300032: Box237
+    4300034: Box238
+    4300036: Box239
+    4300038: fence_e004
+    4300040: Box241
+    4300042: fence_e005
+    4300044: Box242
+    4300046: Box244
+    4300048: fence_s002
+    4300050: Box245
+    4300052: Box246
+    4300054: Box248
+    4300056: Box249
+    4300058: Box250
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
