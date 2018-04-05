@@ -9516,6 +9516,36 @@ Prefab:
       propertyPath: m_Name
       value: rock new 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.7887609
+      objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.2298876
+      objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 1.3471618
+      objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.0032205584
+      objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.12699652
+      objectReference: {fileID: 0}
+    - target: {fileID: 65786150058274222, guid: a69069a457aba924199c737b67dd1b2d,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.66667056
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a69069a457aba924199c737b67dd1b2d, type: 2}
   m_IsPrefabParent: 0
