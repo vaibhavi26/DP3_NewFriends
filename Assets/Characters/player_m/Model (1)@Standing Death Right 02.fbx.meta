@@ -299,7 +299,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -315,11 +315,66 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: Model(Clone)
+      parentName: 
+      position: {x: 0.000000004541874, y: 0.052025948, z: -0.00041136736}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Extract3
+      parentName: Model(Clone)
+      position: {x: -0.0000000027278702, y: -0.008727399, z: 0.0119540235}
+      rotation: {x: -0.000000053385083, y: 0.7071068, z: 0.7071068, w: -0.00000005338508}
+      scale: {x: 0.9810173, y: 0.9810173, z: 0.9810173}
+    - name: Plane028
+      parentName: Model(Clone)
+      position: {x: -0.0042119734, y: 0.04656178, z: 0.011527509}
+      rotation: {x: -0.70400435, y: 0.114506505, z: 0.37803593, w: 0.59021604}
+      scale: {x: 0.8447198, y: 0.84471965, z: 0.8447198}
+    - name: Plane032
+      parentName: Model(Clone)
+      position: {x: -0.0074800365, y: 0.04771996, z: 0.012692045}
+      rotation: {x: -0.46405366, y: -0.29653177, z: -0.16831528, w: 0.8175531}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: Plane033
+      parentName: Model(Clone)
+      position: {x: 0.0006806522, y: 0.010818217, z: -0.006773309}
+      rotation: {x: 0.003652149, y: 0.98229074, z: 0.18732613, w: 0.0006964791}
+      scale: {x: 1.0193502, y: 1.0193506, z: 1.0193503}
+    - name: Plane034
+      parentName: Model(Clone)
+      position: {x: -0.011174092, y: -0.050696485, z: 0.016758218}
+      rotation: {x: -0.18907589, y: -0.5818851, z: -0.14136888, w: 0.7782512}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Plane035
+      parentName: Model(Clone)
+      position: {x: -0.0073297187, y: -0.036434684, z: 0.013949167}
+      rotation: {x: 0.07768801, y: 0.056516282, z: -0.004411173, w: 0.9953648}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: Plane037
+      parentName: Model(Clone)
+      position: {x: 0.007340597, y: -0.036434684, z: 0.01394916}
+      rotation: {x: 0.9953648, y: 0.00441108, z: 0.056516152, w: -0.077688135}
+      scale: {x: -1, y: -1, z: -1.0000004}
+    - name: Plane038
+      parentName: Model(Clone)
+      position: {x: -0.0023251555, y: 0.0377717, z: 0.017038263}
+      rotation: {x: -0.18378018, y: 0.001198883, z: -0.006412211, w: 0.98294574}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: Plane045
+      parentName: Model(Clone)
+      position: {x: -0.029997405, y: 0.004405206, z: 0.0065383213}
+      rotation: {x: 0.618525, y: -0.025847329, z: -0.032790076, w: 0.7846551}
+      scale: {x: 1.1392542, y: 1.1392543, z: 1.1392539}
+    - name: Sphere001
+      parentName: Model(Clone)
+      position: {x: -0.002086202, y: 0.03474042, z: -0.0198836}
+      rotation: {x: 0.06742786, y: 0.9134852, z: -0.39415058, w: 0.07512415}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999999}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -327,12 +382,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Plane028
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8688b8145373850498308cdea9d39e32,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
