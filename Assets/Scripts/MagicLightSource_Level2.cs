@@ -39,7 +39,6 @@ public class MagicLightSource_Level2: MonoBehaviour
 
     GameObject endObject;
 
-     public string check;
 
 
 
@@ -204,7 +203,7 @@ public class MagicLightSource_Level2: MonoBehaviour
             particalGameobject.SetActive(false);
             
         }
-        else if(QuadObject1)
+        if(QuadObject1)
         {
             Behaviour halo1 = (Behaviour)QuadObject1.GetComponent("Halo");
             halo1.enabled = false; particalGameobject1.SetActive(false);
