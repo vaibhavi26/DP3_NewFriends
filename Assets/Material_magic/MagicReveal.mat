@@ -82,10 +82,15 @@ Material:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - _LightDirection: {r: -0.00000012151814, g: 0.06871463, b: 0.9976368, a: 0}
     - _LightPosition: {r: 12.044652, g: 1.1989863, b: 116.48865, a: 0}
 =======
     - _LightDirection: {r: 3.6179999e-16, g: 0.0000000962318, b: -1, a: 0}
     - _LightPosition: {r: 18.021214, g: 1.7840489, b: 79.01416, a: 0}
 >>>>>>> 96db41d221cbfc53cb1e20b403fc9ee94be065fb
+=======
+    - _LightDirection: {r: 0.00000012151814, g: 0.06871463, b: -0.9976364, a: 0}
+    - _LightPosition: {r: 30.299421, g: 1.1989863, b: 23.632772, a: 0}
+>>>>>>> 7d9077570a7576ae3b5fd1ebb9e3acff3c06c132
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
