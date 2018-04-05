@@ -20,20 +20,26 @@ public class MagicLightSource_Level2: MonoBehaviour
 
 
     public Material reveal;
+    public Material reveal1;
     public Light flashlight;
     GameObject ChildGameObject1;
     GameObject ChildGameObject0;
     GameObject QuadObject;
+    GameObject ChildGameObject2;
+    GameObject ChildGameObject3;
+    GameObject QuadObject1;
 
     private GameObject particalGameobject;
     private GameObject particalGameobjectDestroy;
-    private Vector3 instantiatePosition;
-    private GameObject destroyedObject;
+    private GameObject particalGameobject1;
+    private GameObject particalGameobjectDestroy1;
+    private Vector3 instantiatePosition; private Vector3 instantiatePosition1;
+    public GameObject destroyedObject;
     public int signCount = 0;
 
     GameObject endObject;
 
-    // public string check;
+     public string check;
 
 
 
@@ -43,16 +49,22 @@ public class MagicLightSource_Level2: MonoBehaviour
     {
 
         QuadObject = GameObject.Find("Quad_Pallas");
-
+        QuadObject1 = GameObject.Find("Quad_Ceres");
         ChildGameObject1 = Camera.main.transform.GetChild(1).gameObject;
         ChildGameObject0 = Camera.main.transform.GetChild(0).gameObject;
+        ChildGameObject2 = Camera.main.transform.GetChild(2).gameObject;
+        ChildGameObject3 = Camera.main.transform.GetChild(3).gameObject;
 
         instantiatePosition = new Vector3(QuadObject.transform.position.x, QuadObject.transform.position.y, QuadObject.transform.position.z);
+        instantiatePosition1 = new Vector3(QuadObject1.transform.position.x, QuadObject1.transform.position.y, QuadObject1.transform.position.z);
 
         ChildGameObject1.SetActive(false);
+        ChildGameObject3.SetActive(false);
 
         particalGameobject = QuadObject.transform.GetChild(0).gameObject; particalGameobject.SetActive(false);
         particalGameobjectDestroy = QuadObject.transform.GetChild(1).gameObject; particalGameobjectDestroy.SetActive(false);
+        particalGameobject1 = QuadObject1.transform.GetChild(0).gameObject; particalGameobject1.SetActive(false);
+        particalGameobjectDestroy1 = QuadObject1.transform.GetChild(1).gameObject; particalGameobjectDestroy1.SetActive(false);
 
         // particalGameobjectEnd = GameObject.Find("EndObject").transform.GetChild(0).gameObject; particalGameobjectEnd.SetActive(false);
         //particalGameobjectEnd1 = GameObject.Find("EndObject").transform.GetChild(1).gameObject; particalGameobjectEnd1.SetActive(false);
@@ -79,6 +91,10 @@ public class MagicLightSource_Level2: MonoBehaviour
         reveal.SetVector("_LightPosition", flashlight.transform.position);
         reveal.SetVector("_LightDirection", -flashlight.transform.forward);
         reveal.SetFloat("_LightAngle", flashlight.spotAngle);
+        reveal1.SetVector("_LightPosition", flashlight.transform.position);
+        reveal1.SetVector("_LightDirection", -flashlight.transform.forward);
+        reveal1.SetFloat("_LightAngle", flashlight.spotAngle);
+
 
         //three raycast
         float totalFOV = 30.0f;
@@ -170,6 +186,12 @@ public class MagicLightSource_Level2: MonoBehaviour
             halo.enabled = true;
             particalGameobject.SetActive(true);
         }
+        else if (destroyedObject.name == "Quad_Ceres")
+        {
+            Behaviour halo1 = (Behaviour)QuadObject1.GetComponent("Halo");
+            halo1.enabled = true;
+            particalGameobject1.SetActive(true);
+        }
 
     }
     private void noParticleEffect()
@@ -178,9 +200,15 @@ public class MagicLightSource_Level2: MonoBehaviour
         {
             Behaviour halo = (Behaviour)QuadObject.GetComponent("Halo");
             halo.enabled = false;
+           
             particalGameobject.SetActive(false);
+            
         }
-
+        else if(QuadObject1)
+        {
+            Behaviour halo1 = (Behaviour)QuadObject1.GetComponent("Halo");
+            halo1.enabled = false; particalGameobject1.SetActive(false);
+        }
 
     }
     private void moveUI()
@@ -188,14 +216,20 @@ public class MagicLightSource_Level2: MonoBehaviour
         if (destroyedObject.name == "Quad_Pallas")
         {
             particalGameobjectDestroy.SetActive(true);
-            //check = "Quad_Moon";
+            //check = "Quad_Pallas";
             ChildGameObject1.SetActive(true);
 
-            GameObject toMove = Instantiate(ChildGameObject1, instantiatePosition, Quaternion.identity); ChildGameObject0.SetActive(false);
+            GameObject toMove = Instantiate(ChildGameObject1, instantiatePosition, Quaternion.identity);
+            ChildGameObject0.SetActive(false);
+        }
+        else if (destroyedObject.name == "Quad_Ceres")
+        {
+            particalGameobjectDestroy1.SetActive(true);
+           // check = "Quad_Ceres";
+            ChildGameObject3.SetActive(true);
 
-
-
-
+            GameObject toMove1 = Instantiate(ChildGameObject3, instantiatePosition1, Quaternion.identity);
+            ChildGameObject2.SetActive(false);
         }
 
 

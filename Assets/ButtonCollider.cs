@@ -5,8 +5,8 @@ using UnityEngine.Events;
 using UnityEngine.Playables;
 
 public class ButtonCollider : MonoBehaviour {
-	public UnityEvent onSpacebar;
-	public UnityEvent onReturn;
+	//public UnityEvent onSpacebar;
+	//public UnityEvent onReturn;
 	public PlayableDirector playableDirector;
     public MagicLightSource mg;
     private int signCheck;
@@ -25,8 +25,6 @@ public class ButtonCollider : MonoBehaviour {
         Debug.Log(signCheck);
         if (signCheck==1)
        {
-		
-
 				playableDirector.Play ();
 				
 			
