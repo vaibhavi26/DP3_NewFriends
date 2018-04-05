@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 8688b8145373850498308cdea9d39e32
+timeCreated: 1522924696
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Extract3
+    100002: //RootNode
+    100004: Plane028
+    100006: Plane032
+    100008: Plane033
+    100010: Plane034
+    100012: Plane035
+    100014: Plane037
+    100016: Plane038
+    100018: Plane045
+    100020: Sphere001
+    400000: Extract3
+    400002: //RootNode
+    400004: Plane028
+    400006: Plane032
+    400008: Plane033
+    400010: Plane034
+    400012: Plane035
+    400014: Plane037
+    400016: Plane038
+    400018: Plane045
+    400020: Sphere001
+    2300000: Extract3
+    2300002: Plane028
+    2300004: Plane032
+    2300006: Plane033
+    2300008: Plane034
+    2300010: Plane035
+    2300012: Plane037
+    2300014: Plane038
+    2300016: Plane045
+    2300018: Sphere001
+    3300000: Extract3
+    3300002: Plane028
+    3300004: Plane032
+    3300006: Plane033
+    3300008: Plane034
+    3300010: Plane035
+    3300012: Plane037
+    3300014: Plane038
+    3300016: Plane045
+    3300018: Sphere001
+    4300000: Plane034
+    4300002: Plane045
+    4300004: Plane033
+    4300006: Extract3
+    4300008: Plane035
+    4300010: Plane037
+    4300012: Sphere001
+    4300014: Plane038
+    4300016: Plane028
+    4300018: Plane032
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: Model(Clone)
+      parentName: 
+      position: {x: 0.000000004541874, y: 0.052025948, z: -0.00041136736}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Extract3
+      parentName: Model(Clone)
+      position: {x: -0.0000000027278702, y: -0.008727399, z: 0.0119540235}
+      rotation: {x: -0.000000053385083, y: 0.7071068, z: 0.7071068, w: -0.00000005338508}
+      scale: {x: 0.9810173, y: 0.9810173, z: 0.9810173}
+    - name: Plane028
+      parentName: Model(Clone)
+      position: {x: -0.0042119734, y: 0.04656178, z: 0.011527509}
+      rotation: {x: -0.70400435, y: 0.114506505, z: 0.37803593, w: 0.59021604}
+      scale: {x: 0.8447198, y: 0.84471965, z: 0.8447198}
+    - name: Plane032
+      parentName: Model(Clone)
+      position: {x: -0.0074800365, y: 0.04771996, z: 0.012692045}
+      rotation: {x: -0.46405366, y: -0.29653177, z: -0.16831528, w: 0.8175531}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: Plane033
+      parentName: Model(Clone)
+      position: {x: 0.0006806522, y: 0.010818217, z: -0.006773309}
+      rotation: {x: 0.003652149, y: 0.98229074, z: 0.18732613, w: 0.0006964791}
+      scale: {x: 1.0193502, y: 1.0193506, z: 1.0193503}
+    - name: Plane034
+      parentName: Model(Clone)
+      position: {x: -0.011174092, y: -0.050696485, z: 0.016758218}
+      rotation: {x: -0.18907589, y: -0.5818851, z: -0.14136888, w: 0.7782512}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Plane035
+      parentName: Model(Clone)
+      position: {x: -0.0073297187, y: -0.036434684, z: 0.013949167}
+      rotation: {x: 0.07768801, y: 0.056516282, z: -0.004411173, w: 0.9953648}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: Plane037
+      parentName: Model(Clone)
+      position: {x: 0.007340597, y: -0.036434684, z: 0.01394916}
+      rotation: {x: 0.9953648, y: 0.00441108, z: 0.056516152, w: -0.077688135}
+      scale: {x: -1, y: -1, z: -1.0000004}
+    - name: Plane038
+      parentName: Model(Clone)
+      position: {x: -0.0023251555, y: 0.0377717, z: 0.017038263}
+      rotation: {x: -0.18378018, y: 0.001198883, z: -0.006412211, w: 0.98294574}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: Plane045
+      parentName: Model(Clone)
+      position: {x: -0.029997405, y: 0.004405206, z: 0.0065383213}
+      rotation: {x: 0.618525, y: -0.025847329, z: -0.032790076, w: 0.7846551}
+      scale: {x: 1.1392542, y: 1.1392543, z: 1.1392539}
+    - name: Sphere001
+      parentName: Model(Clone)
+      position: {x: -0.002086202, y: 0.03474042, z: -0.0198836}
+      rotation: {x: 0.06742786, y: 0.9134852, z: -0.39415058, w: 0.07512415}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999999}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Plane028
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
