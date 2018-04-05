@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ca736fb3faa2ce449b98656feffbf1de, type: 3}
+        m_Texture: {fileID: 2800000, guid: 638fc845a025ad14380085a7c6b6c5e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0.01, y: 0}
     - _MetallicGlossMap:
@@ -67,7 +67,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Glow: 1.48
-    - _LightAngle: 20
+    - _LightAngle: 21
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -81,11 +81,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
-<<<<<<< HEAD
-    - _LightDirection: {r: 0.9976367, g: 0.06871465, b: 0.00000052002724, a: 0}
-    - _LightPosition: {r: -9.463186, g: 1.1935421, b: -61.842278, a: 0}
-=======
-    - _LightDirection: {r: -0.6212557, g: 0.06871464, b: -0.7805894, a: 0}
-    - _LightPosition: {r: 0.59623516, g: 1.1989862, b: -0.687277, a: 0}
->>>>>>> dd8371f72a88bfcf8c67d8eea427d36acbd49e11
+    - _LightDirection: {r: 3.6179999e-16, g: 0.0000000962318, b: -1, a: 0}
+    - _LightPosition: {r: 28.058033, g: 2.888967, b: 83.365715, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
