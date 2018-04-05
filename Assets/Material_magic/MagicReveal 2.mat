@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: MagicReveal
+  m_Name: MagicReveal 2
   m_Shader: {fileID: 4800000, guid: 607cf6f216c45e54f8eae8deb977a628, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ca736fb3faa2ce449b98656feffbf1de, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0ddec02b7962f134198e8d78d31c067e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0.01, y: 0}
     - _MetallicGlossMap:
@@ -67,7 +67,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Glow: 1.48
-    - _LightAngle: 21
+    - _LightAngle: 20
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -81,11 +81,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
-<<<<<<< HEAD
-    - _LightDirection: {r: 3.6179999e-16, g: 0.0000000962318, b: -1, a: 0}
-    - _LightPosition: {r: 0.4875002, g: 1.3804432, b: 3.5450003, a: 0}
-=======
-    - _LightDirection: {r: -0.40992495, g: 0.000000096231794, b: -0.91211927, a: 0}
-    - _LightPosition: {r: 7.638845, g: 1.3804439, b: 38.06865, a: 0}
->>>>>>> 546720fd4d8fbfe828a8ebcecb3b764e9a26ba0b
+    - _LightDirection: {r: 0.00000012151814, g: 0.06871463, b: -0.9976364, a: 0}
+    - _LightPosition: {r: 36.912018, g: 1.1935526, b: 106.70521, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
