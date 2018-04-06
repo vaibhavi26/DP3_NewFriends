@@ -35,7 +35,7 @@ public class MagicLightSource_Level2: MonoBehaviour
     private GameObject particalGameobjectDestroy1;
     private Vector3 instantiatePosition; private Vector3 instantiatePosition1;
     private GameObject destroyedObject;
-    public int signCount = 0;
+    public int signCount;
 
     GameObject endObject;
 
@@ -47,7 +47,7 @@ public class MagicLightSource_Level2: MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        signCount = 0;
         QuadObject = GameObject.Find("Quad_Pallas");
         QuadObject1 = GameObject.Find("Quad_Ceres");
         ChildGameObject1 = Camera.main.transform.GetChild(1).gameObject;
@@ -68,7 +68,7 @@ public class MagicLightSource_Level2: MonoBehaviour
 
         // particalGameobjectEnd = GameObject.Find("EndObject").transform.GetChild(0).gameObject; particalGameobjectEnd.SetActive(false);
         //particalGameobjectEnd1 = GameObject.Find("EndObject").transform.GetChild(1).gameObject; particalGameobjectEnd1.SetActive(false);
-        endObject = GameObject.Find("Cube");
+        endObject = GameObject.Find("Cube_Level2");
         endObject.SetActive(false);
 
 
@@ -121,10 +121,12 @@ public class MagicLightSource_Level2: MonoBehaviour
             destroyedObject = shootHit_2.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
             {
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
 
-                Invoke("Destroy1", 0.5f);
-                moveUI();
-
+                    Invoke("Destroy1", 0.5f);
+                    moveUI();
+                }
 
             }
 
@@ -137,8 +139,11 @@ public class MagicLightSource_Level2: MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                Invoke("Destroy2", 0.5f);
-                moveUI();
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
+                    Invoke("Destroy2", 0.5f);
+                    moveUI();
+                }
 
             }
 
@@ -149,8 +154,11 @@ public class MagicLightSource_Level2: MonoBehaviour
             destroyedObject = shootHit_m.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
             {
-                Invoke("Destroy3", 0.5f);
-                moveUI();
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
+                    Invoke("Destroy3", 0.5f);
+                    moveUI();
+                }
             }
 
 
@@ -162,22 +170,33 @@ public class MagicLightSource_Level2: MonoBehaviour
     }
     public void Destroy1()
     {
-        Destroy(shootHit_2.transform.gameObject); signCount = signCount + 1;
-        endObject.SetActive(true);
-        //  particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
+        Destroy(shootHit_2.transform.gameObject);
+        signCount++;
+        if (signCount == 2)
+        {
+            endObject.SetActive(true);
+        }
+
     }
     public void Destroy2()
     {
-        Destroy(shootHit_1.transform.gameObject); signCount = signCount + 1;
-        endObject.SetActive(true);
-        //particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
+        Destroy(shootHit_1.transform.gameObject);
+        signCount++;
+        if (signCount == 2)
+        {
+            endObject.SetActive(true);
+        }
+     
     }
     public void Destroy3()
     {
-        Destroy(shootHit_m.transform.gameObject); signCount = signCount + 1;
-        endObject.SetActive(true);
-        // particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
+        Destroy(shootHit_m.transform.gameObject); signCount++;
+        if (signCount == 2)
+        {
+            endObject.SetActive(true);
+        }
     }
+        
     private void particleEffect()
     {
         if (destroyedObject.name == "Quad_Pallas")
