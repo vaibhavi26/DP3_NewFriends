@@ -171,7 +171,7 @@ public class MagicLightSource_Level2: MonoBehaviour
     public void Destroy1()
     {
         Destroy(shootHit_2.transform.gameObject);
-        signCount++;
+        if (signCount <2) signCount++;
         if (signCount == 2)
         {
             endObject.SetActive(true);
@@ -181,7 +181,7 @@ public class MagicLightSource_Level2: MonoBehaviour
     public void Destroy2()
     {
         Destroy(shootHit_1.transform.gameObject);
-        signCount++;
+        if (signCount < 2) signCount++;
         if (signCount == 2)
         {
             endObject.SetActive(true);
@@ -190,7 +190,8 @@ public class MagicLightSource_Level2: MonoBehaviour
     }
     public void Destroy3()
     {
-        Destroy(shootHit_m.transform.gameObject); signCount++;
+        Destroy(shootHit_m.transform.gameObject);
+        if(signCount<2)signCount++;
         if (signCount == 2)
         {
             endObject.SetActive(true);
