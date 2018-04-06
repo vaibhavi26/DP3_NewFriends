@@ -32,6 +32,7 @@ public class MagicLightSource : MonoBehaviour
     public int signCount=0;
 
     GameObject endObject;
+    private bool destroyFlag=false;
 
     // public string check;
 
@@ -105,9 +106,11 @@ public class MagicLightSource : MonoBehaviour
             destroyedObject = shootHit_2.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
             {
-
-                Invoke("Destroy1", 0.5f); 
-                moveUI();
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
+                    Invoke("Destroy1", 0.5f);
+                    moveUI();
+                }
                 
 
             }
@@ -121,10 +124,11 @@ public class MagicLightSource : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                Invoke("Destroy2", 0.5f);
-
-                Debug.Log("hitObject" + destroyedObject);
-                moveUI();
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
+                    Invoke("Destroy2", 0.5f);
+                    moveUI();
+                }
 
             }
 
@@ -135,10 +139,13 @@ public class MagicLightSource : MonoBehaviour
             destroyedObject = shootHit_m.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
             {
-                Invoke("Destroy3", 0.5f);
-             
-                Debug.Log("hitObject" + destroyedObject);
-                moveUI();
+                if (Input.mousePosition.x >= Screen.width / 2)
+                {
+                    Invoke("Destroy3", 0.5f);
+
+                    Debug.Log("hitObject" + destroyedObject);
+                    moveUI();
+                }
             }
 
 
@@ -150,20 +157,23 @@ public class MagicLightSource : MonoBehaviour
     }
     public void Destroy1()
     {
+        Debug.Log("Destroyed by 1st ray");
         Destroy(shootHit_2.transform.gameObject); signCount = signCount + 1;
-        endObject.SetActive(true);
+        endObject.SetActive(true); 
         //  particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
     }
     public void Destroy2()
     {
+        Debug.Log("Destroyed by 2nd ray");
         Destroy(shootHit_1.transform.gameObject); signCount = signCount + 1;
         endObject.SetActive(true);
         //particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
     }
     public void Destroy3()
     {
+        Debug.Log("Destroyed by mid ray");
         Destroy(shootHit_m.transform.gameObject); signCount = signCount + 1;
-        endObject.SetActive(true);
+        endObject.SetActive(true); 
         // particalGameobjectEnd1.SetActive(true); particalGameobjectEnd.SetActive(true);
     }
     private void particleEffect()

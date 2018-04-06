@@ -37,13 +37,8 @@
         Animating(movement.x, movement.y);*/
         float xMovementLeftJoystick = leftJoystickInput.x; // The horizontal movement from joystick 01
         float zMovementLeftJoystick = leftJoystickInput.y; // The vertical movement from joystick 01	
-
+        anim.SetBool("IsWalking", false);
         // if there is no input on the left joystick
-        if (leftJoystickInput == Vector3.zero)
-        {
-            //anim.SetBool("isRunning", false);
-            anim.SetBool("Animating", false);
-        }
 
         // if there is only input from the left joystick
         if (leftJoystickInput != Vector3.zero)
@@ -56,7 +51,7 @@
             leftJoystickInput = new Vector3(xMovementLeftJoystick, 0, zMovementLeftJoystick);
             leftJoystickInput = transform.TransformDirection(leftJoystickInput);
             leftJoystickInput *= speed;
-          //  leftJoystickInput = leftJoystickInput * 10;
+     
 
             // rotate the player to face the direction of input
             Vector3 temp = transform.position;
@@ -69,23 +64,16 @@
                // rotationTarget.localRotation = Quaternion.Slerp(rotationTarget.localRotation, Quaternion.LookRotation(lookDirection), rotationSpeed * Time.deltaTime);
                 transform.rotation = Quaternion.LookRotation(lookDirection);
             }
-            if (anim != null)
-            {
-                anim.SetBool("Animating", true);
-            }
+         
 
             // move the player
             Vector3 moveVector = (Vector3.right * leftJoystickInputOriginal.x + Vector3.forward * leftJoystickInputOriginal.y).normalized;
            playerRigidbody.transform.Translate(moveVector *speed* Time.fixedDeltaTime,Space.World);
+            anim.SetBool("IsWalking", true);
         }
     }
 
 
-    void Animating(float h, float v)
-    {
-        bool walking = h != 0f || v != 0f;
-        anim.SetBool("IsWalking", walking);
-    }
 
 }
    
