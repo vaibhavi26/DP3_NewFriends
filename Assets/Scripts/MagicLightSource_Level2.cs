@@ -39,7 +39,7 @@ public class MagicLightSource_Level2: MonoBehaviour
 
     GameObject endObject;
 
-     public string check;
+     public bool check=true;
 
 
 
@@ -120,12 +120,14 @@ public class MagicLightSource_Level2: MonoBehaviour
         {
             destroyedObject = shootHit_2.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
-            {
-                if (Input.mousePosition.x >= Screen.width / 2)
+            {if (check)
                 {
-
-                    Invoke("Destroy1", 0.5f);
-                    moveUI();
+                    if (Input.mousePosition.x >= Screen.width / 2)
+                    {
+                        check = false;
+                        Invoke("Destroy1", 0.2f);
+                        moveUI();
+                    }
                 }
 
             }
@@ -139,10 +141,14 @@ public class MagicLightSource_Level2: MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                if (Input.mousePosition.x >= Screen.width / 2)
+                if (check)
                 {
-                    Invoke("Destroy2", 0.5f);
-                    moveUI();
+                    if (Input.mousePosition.x >= Screen.width / 2)
+                    {
+                        check = false;
+                        Invoke("Destroy2", 0.2f);
+                        moveUI();
+                    }
                 }
 
             }
@@ -154,10 +160,14 @@ public class MagicLightSource_Level2: MonoBehaviour
             destroyedObject = shootHit_m.transform.gameObject; particleEffect();
             if (Input.GetMouseButtonDown(0))
             {
-                if (Input.mousePosition.x >= Screen.width / 2)
+                if (check)
                 {
-                    Invoke("Destroy3", 0.5f);
-                    moveUI();
+                    if (Input.mousePosition.x >= Screen.width / 2)
+                    {
+                        check = false;
+                        Invoke("Destroy3", 0.2f);
+                        moveUI();
+                    }
                 }
             }
 
@@ -170,8 +180,9 @@ public class MagicLightSource_Level2: MonoBehaviour
     }
     public void Destroy1()
     {
+        if (signCount < 2) { signCount++; check = true; }
         Destroy(shootHit_2.transform.gameObject);
-        if (signCount <2) signCount++;
+       
         if (signCount == 2)
         {
             endObject.SetActive(true);
@@ -180,8 +191,10 @@ public class MagicLightSource_Level2: MonoBehaviour
     }
     public void Destroy2()
     {
+        if (signCount < 2)
+        { signCount++; check = true; }
         Destroy(shootHit_1.transform.gameObject);
-        if (signCount < 2) signCount++;
+        
         if (signCount == 2)
         {
             endObject.SetActive(true);
@@ -190,8 +203,9 @@ public class MagicLightSource_Level2: MonoBehaviour
     }
     public void Destroy3()
     {
+        if (signCount < 2) { signCount++; check = true; }
         Destroy(shootHit_m.transform.gameObject);
-        if(signCount<2)signCount++;
+       
         if (signCount == 2)
         {
             endObject.SetActive(true);
@@ -218,10 +232,21 @@ public class MagicLightSource_Level2: MonoBehaviour
     {
         if (QuadObject)
         {
-            Behaviour halo = (Behaviour)QuadObject.GetComponent("Halo");
-            halo.enabled = false;
-           
-            particalGameobject.SetActive(false);
+            if (QuadObject1)
+            {
+                Behaviour halo1 = (Behaviour)QuadObject1.GetComponent("Halo");
+                halo1.enabled = false; particalGameobject1.SetActive(false);
+                Behaviour halo = (Behaviour)QuadObject.GetComponent("Halo");
+                halo.enabled = false;
+                particalGameobject.SetActive(false);
+            }
+            else
+            {
+                Behaviour halo = (Behaviour)QuadObject.GetComponent("Halo");
+                halo.enabled = false;
+
+                particalGameobject.SetActive(false);
+            }
             
         }
         else if(QuadObject1)
