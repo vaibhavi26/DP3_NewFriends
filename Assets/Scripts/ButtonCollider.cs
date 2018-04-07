@@ -8,7 +8,7 @@ public class ButtonCollider : MonoBehaviour {
 	//public UnityEvent onSpacebar;
 	//public UnityEvent onReturn;
 	public PlayableDirector playableDirector;
-    public MagicLightSource mg;
+  //  public MagicLightSource mg;
     private int signCheck;
 
    // GameObject particalGameobjectEnd;
@@ -21,16 +21,16 @@ public class ButtonCollider : MonoBehaviour {
 
     public void OnTriggerStay ()
     {
-        signCheck = GameObject.FindWithTag("Player").transform.GetChild(2).GetChild(0).GetComponent<MagicLightSource>().signCount;
-        Debug.Log(signCheck);
-        if (signCheck==1)
-       {
+        //signCheck = GameObject.FindWithTag("Player").transform.GetChild(2).GetChild(0).GetComponent<MagicLightSource>().signCount;
+      //  Debug.Log(signCheck);
+       // if (signCheck==1)
+       //{
 		
 
 				playableDirector.Play ();
 				
 			
-		}
+		//}
 
 	}
     public void OnTriggerExit()

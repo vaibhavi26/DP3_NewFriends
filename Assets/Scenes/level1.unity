@@ -39867,6 +39867,36 @@ Prefab:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1180284260}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: randomSeed
+      value: -928884559
+      objectReference: {fileID: 0}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].time
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 30.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 198495102931117274, guid: 504cc25b47c260a4e9c3c2390050943f,
+        type: 2}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].repeatInterval
+      value: 0.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 504cc25b47c260a4e9c3c2390050943f, type: 2}
   m_IsPrefabParent: 0
@@ -48181,7 +48211,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1604688330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f7f62379def63a42840f16ddf8ffa27, type: 3}
   m_Name: 
