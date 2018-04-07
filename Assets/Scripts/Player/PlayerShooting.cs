@@ -33,25 +33,46 @@ public class PlayerShooting : MonoBehaviour
     }
 
 
-    void Update()
+   void Update()
     {
         timer += Time.deltaTime;
-
-        if (Input.GetButtonDown("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
-        {
-            if (Input.mousePosition.x >= Screen.width / 2)
-            {
-                
-
-                Shoot();
-            }
-        }
-
         if (timer >= timeBetweenBullets * effectsDisplayTime)
         {
             DisableEffects();
         }
+
+        /* timer += Time.deltaTime;
+
+         if (Input.GetButtonDown("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+         {
+             if (Input.mousePosition.x >= Screen.width / 2)
+             {
+
+
+                 Shoot();
+             }
+         }
+
+         if (timer >= timeBetweenBullets * effectsDisplayTime)
+         {
+             DisableEffects();
+         }*/
     }
+
+    public void onShootClick()
+        {
+       
+                if(timer >= timeBetweenBullets && Time.timeScale != 0)
+                {
+                    Shoot();
+                }
+
+           
+
+             
+        }
+
+       
 
 
     public void DisableEffects()

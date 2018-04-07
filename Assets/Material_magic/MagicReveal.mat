@@ -67,7 +67,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Glow: 1.48
-    - _LightAngle: 20
+    - _LightAngle: 21
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -81,6 +81,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
-    - _LightDirection: {r: -0.00000012151814, g: 0.06871463, b: 0.9976368, a: 0}
-    - _LightPosition: {r: 20.139395, g: 1.1989864, b: -0.19716693, a: 0}
+    - _LightDirection: {r: -0.000000058633802, g: 0.029848643, b: -0.99955446, a: 0}
+    - _LightPosition: {r: 3.00882, g: 1.7034245, b: 28.670515, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
