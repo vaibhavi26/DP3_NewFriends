@@ -19,7 +19,7 @@ public class ButtonCollider : MonoBehaviour {
       //  particalGameobjectEnd1 = GameObject.Find("EndObject").transform.GetChild(1).gameObject; 
     }
 
-    public void OnTriggerStay ()
+    public void OnTriggerEnter ()
     {
         //signCheck = GameObject.FindWithTag("Player").transform.GetChild(2).GetChild(0).GetComponent<MagicLightSource>().signCount;
       //  Debug.Log(signCheck);
